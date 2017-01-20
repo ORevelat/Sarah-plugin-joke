@@ -1,0 +1,25 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleJOKE" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+
+	<rule id="ruleJOKE" scope="public">
+    	<tag>out.action=new Object();</tag>
+
+	    <item>Sarah s'il te plait</item>
+
+		<item>
+			<ruleref uri="#JOKE" />
+			<tag>out.action.mode = "JOKE";</tag>
+		</item>
+
+	    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/joke";</tag>
+	</rule>
+
+	<rule id="JOKE" scope="public">
+		<one-of>
+			<item>raconte une blague</item>
+			<item>raconte moi une blague</item>
+			<item>raconte nous une blague</item>
+			<item>une autre blague</item>
+		</one-of>
+	</rule>
+
+</grammar>

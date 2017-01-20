@@ -1,0 +1,9 @@
+{
+	"modules" : { 
+		"joke"  : {
+			"description"		: "Plugin Joke",
+			"version"			: "1.0",
+			"max_id"			: "2250"
+		}
+	}
+}
